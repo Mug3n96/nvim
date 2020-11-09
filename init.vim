@@ -12,7 +12,7 @@ call plug#begin()
   Plug 'ryanoasis/vim-devicons'
 
   " sytax highlighting and completer
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'neoclide/coc.nvim', {'branch': 'master'}
 
   " undotree
   Plug 'mbbill/undotree'
@@ -51,7 +51,7 @@ let g:NERDTreeShowHidden = 1
 
 let g:ctrlp_use_caching = 0
 
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-angular']
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -109,6 +109,7 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>;n :tabn<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <leader>q :NERDTreeToggle<CR>
