@@ -12,7 +12,7 @@ call plug#begin()
   Plug 'ryanoasis/vim-devicons'
 
   " sytax highlighting and completer
-  Plug 'neoclide/coc.nvim', {'branch': 'master'}
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   " undotree
   Plug 'mbbill/undotree'
@@ -109,7 +109,10 @@ nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
 nnoremap <leader>u :UndotreeShow<CR>
+
 nnoremap <leader>;n :tabn<CR>
+nnoremap <leader>;p :tabp<CR>
+
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <leader>ps :Rg<SPACE>
 nnoremap <leader>q :NERDTreeToggle<CR>
