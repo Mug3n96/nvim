@@ -33,10 +33,6 @@ call plug#end()
 
 syntax on
 
-if (has("termguicolors"))
- set termguicolors
-endif
-
 " syntax enable
 
 " nord, gruvbox
