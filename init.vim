@@ -29,6 +29,9 @@ call plug#begin()
 
   Plug 'ap/vim-css-color'
 
+  " Use Sudo in Editor
+  Plug 'lambdalisue/suda.vim'
+
 call plug#end()
 
 syntax on
